@@ -1,0 +1,9 @@
+---
+- name: Pull Docker image for Scientific Calculator 
+  hosts: local
+  connection: local
+  tasks:
+    - name: Pull Junit devops image
+      docker_image:
+        name: saad2714/scientific-calc:latest
+        source: pull
